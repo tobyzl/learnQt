@@ -32,10 +32,21 @@ MainWindow::~MainWindow()
 }
 
 void MainWindow::loadAndPlayMovie() {
-    QString str = ui->lineEdit->text();
-    emit urlSignal(str);
+    QString urlStr = ui->lineEdit->text();
 
-    loadMovie();
+    url = ui->lineEdit->text();
+    QFileInfo info(url.path());
+    QString fileName(info.fileName());
+
+    QFile *loacalFile = new QFile(fileName);
+    if (!loacalFile->open(QIODevice::ReadOnly)) {
+        delete loacalFile;
+        loacalFile = NULL;
+        emit urlSignal(urlStr);
+        loadMovie();
+    } else {
+        playMovie();
+    }
 }
 
 
@@ -63,9 +74,14 @@ void MainWindow::playMovie() {
    // filePath = path.data();
 
     url = ui->lineEdit->text();
-    player->setMedia(QUrl(url));
-    //player->setMedia(QUrl::fromLocalFile(QString::fromLocal8Bit(filePath)));
+    QFileInfo info(url.path());
+    QString fileName(info.fileName());
 
+    //player->setMedia(QUrl(url));
+    //player->setMedia(QUrl::fromLocalFile(QString::fromLocal8Bit(filePath)));
+    player->setMedia(QUrl::fromLocalFile(fileName));
+  // player->setMedia(QUrl("http://example.com/movie3.mp4"));
+    videoWidget->setWindowTitle(fileName);
     videoWidget->show();
     player->play();
 }
