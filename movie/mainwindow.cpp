@@ -7,6 +7,13 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
    // webView();
+    myThread = new MyThread;
+    myThread->start();
+
+   connect(this, SIGNAL(urlSignal(QString)), myThread, SLOT(urlSlot(QString)));
+
+  // myThread->wait()
+
 
     manager = new QNetworkAccessManager(this);
     //connect(manager,SIGNAL(finished(QNetworkReply*)), this,SLOT(replyFinished(QNetworkReply*)));
@@ -15,7 +22,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
 
     pushButton = new QPushButton("movie");
-    connect(pushButton, SIGNAL(clicked()), this, SLOT(loadMovie()));
+    connect(pushButton, SIGNAL(clicked()), this, SLOT(loadAndPlayMovie()));
     statusBar()->addPermanentWidget(pushButton);
 }
 
@@ -23,6 +30,14 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
+
+void MainWindow::loadAndPlayMovie() {
+    QString str = ui->lineEdit->text();
+    emit urlSignal(str);
+
+    loadMovie();
+}
+
 
 void MainWindow::replyFinished(QNetworkReply *reply) {
   QTextCodec *codec = QTextCodec::codecForName("utf8");
@@ -43,45 +58,44 @@ void MainWindow::playMovie() {
     //QString fileNamePath = "F:/learnQt/movie/build/";
     //fileNamePath += fileName;
 
-    char* filePath;
-    QByteArray path = file->fileName().toLatin1();
-    filePath = path.data();
+   // char* filePath;
+    //QByteArray path = file->fileName().toLatin1();
+   // filePath = path.data();
 
-    //player->setMedia(QUrl("http://www.padsystem.com/PadSystemWeb/en/static/movie/p02_Zoom.mp4"));
-    player->setMedia(QUrl::fromLocalFile(QString::fromLocal8Bit(filePath)));
+    url = ui->lineEdit->text();
+    player->setMedia(QUrl(url));
+    //player->setMedia(QUrl::fromLocalFile(QString::fromLocal8Bit(filePath)));
 
     videoWidget->show();
     player->play();
 }
 
 void MainWindow::loadMovie() {
-     url = ui->lineEdit->text();
-     // ttp://www.padsystem.com/PadSystemWeb/en/static/movie/p02_Zoom.mp4
+    url = ui->lineEdit->text();
+    // ttp://www.padsystem.com/PadSystemWeb/en/static/movie/p02_Zoom.mp4
 
-     QFileInfo info(url.path());
-     QString fileName(info.fileName());
-     // 获取文件名
+    QFileInfo info(url.path());
+    QString fileName(info.fileName());
+    // 获取文件名
 
-    // playMovie();
+   // playMovie();
 
-     if (fileName.isEmpty()) {
-         fileName = "test.html";
-     }
+    if (fileName.isEmpty()) {
+        fileName = "test.html";
+    }
 
-     //fileName += "F:\learnQt\movie";
-     file = new QFile(fileName);
-     if (!file->open(QIODevice::WriteOnly)) {
-         qDebug() << "open file error";
-         delete file;
-         file = NULL;
-         return;
-     }
+    //fileName += "F:\learnQt\movie";
+    file = new QFile(fileName);
+    if (!file->open(QIODevice::WriteOnly)) {
+        qDebug() << "open file error";
+        delete file;
+        file = NULL;
+        return;
+    }
 
-     startRequest(url); // 进行连接请求
-     ui->progressBar->setValue(0);
-      ui->progressBar->show();
-
-      playMovie();
+    startRequest(url); // 进行连接请求
+    ui->progressBar->setValue(0);
+     ui->progressBar->show();
 }
 
 void MainWindow::startRequest(QUrl url) { // 链接请求

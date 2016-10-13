@@ -11,8 +11,12 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    loadmoviethread.cpp \
+    thread.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    loadmoviethread.h \
+    thread.h
 
 FORMS    += mainwindow.ui
