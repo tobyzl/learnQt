@@ -18,6 +18,7 @@
 #include <QIODevice>
 #include "loadmoviethread.h"
 #include "thread.h"
+#include "showmovie.h"
 
 namespace Ui {
 class MainWindow;

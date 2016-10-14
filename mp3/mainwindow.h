@@ -7,6 +7,16 @@ namespace Ui {
 class MainWindow;
 }
 
+class QAction;
+
+class QMenu;
+
+class QMediaPlayer;
+
+class QMediaPlaylist;
+
+class QSystemTrayIcon;
+
 class MainWindow : public QMainWindow
 {
     Q_OBJECT

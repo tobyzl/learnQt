@@ -13,10 +13,12 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp \
     loadmoviethread.cpp \
-    thread.cpp
+    thread.cpp \
+    showmovie.cpp
 
 HEADERS  += mainwindow.h \
     loadmoviethread.h \
-    thread.h
+    thread.h \
+    showmovie.h
 
 FORMS    += mainwindow.ui

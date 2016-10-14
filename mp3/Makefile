@@ -198,8 +198,11 @@ Makefile: mp3.pro C:\Qt\Qt5.4.0\5.4\msvc2013\mkspecs\win32-msvc2013\qmake.conf C
 		mp3.pro \
 		C:/Qt/Qt5.4.0/5.4/msvc2013/lib/qtmaind.prl \
 		C:/Qt/Qt5.4.0/5.4/msvc2013/lib/Qt5Cored.prl \
+		C:/Qt/Qt5.4.0/5.4/msvc2013/lib/Qt5Multimedia.prl \
+		C:/Qt/Qt5.4.0/5.4/msvc2013/lib/Qt5WinExtras.prl \
 		C:/Qt/Qt5.4.0/5.4/msvc2013/lib/Qt5Widgets.prl \
 		C:/Qt/Qt5.4.0/5.4/msvc2013/lib/Qt5Gui.prl \
+		C:/Qt/Qt5.4.0/5.4/msvc2013/lib/Qt5Network.prl \
 		C:/Qt/Qt5.4.0/5.4/msvc2013/lib/Qt5Core.prl
 	$(QMAKE) -spec win32-msvc2013 CONFIG+=debug -o Makefile mp3.pro
 C:\Qt\Qt5.4.0\5.4\msvc2013\mkspecs\features\spec_pre.prf:
@@ -327,8 +330,11 @@ C:\Qt\Qt5.4.0\5.4\msvc2013\mkspecs\features\lex.prf:
 mp3.pro:
 C:/Qt/Qt5.4.0/5.4/msvc2013/lib/qtmaind.prl:
 C:/Qt/Qt5.4.0/5.4/msvc2013/lib/Qt5Cored.prl:
+C:/Qt/Qt5.4.0/5.4/msvc2013/lib/Qt5Multimedia.prl:
+C:/Qt/Qt5.4.0/5.4/msvc2013/lib/Qt5WinExtras.prl:
 C:/Qt/Qt5.4.0/5.4/msvc2013/lib/Qt5Widgets.prl:
 C:/Qt/Qt5.4.0/5.4/msvc2013/lib/Qt5Gui.prl:
+C:/Qt/Qt5.4.0/5.4/msvc2013/lib/Qt5Network.prl:
 C:/Qt/Qt5.4.0/5.4/msvc2013/lib/Qt5Core.prl:
 qmake: FORCE
 	@$(QMAKE) -spec win32-msvc2013 CONFIG+=debug -o Makefile mp3.pro

@@ -60,11 +60,13 @@ void MainWindow::replyFinished(QNetworkReply *reply) {
 
 
 void MainWindow::playMovie() {
-    QMediaPlayer *player = new QMediaPlayer;
+    //QMediaPlayer *player = new QMediaPlayer;
 
-    QVideoWidget *videoWidget = new QVideoWidget;
+    ShowMovieWidget *videoWidget = new ShowMovieWidget;
 
-    player->setVideoOutput(videoWidget);
+    QVideoWidget *playMovie = videoWidget->playMovieWidget;
+    videoWidget->player->setVideoOutput(playMovie);
+   // player->setVideoOutput(videoWidget->playMovieWidget);
 
     //QString fileNamePath = "F:/learnQt/movie/build/";
     //fileNamePath += fileName;
@@ -79,11 +81,15 @@ void MainWindow::playMovie() {
 
     //player->setMedia(QUrl(url));
     //player->setMedia(QUrl::fromLocalFile(QString::fromLocal8Bit(filePath)));
-    player->setMedia(QUrl::fromLocalFile(fileName));
+    videoWidget->player->setMedia(QUrl::fromLocalFile(fileName));
   // player->setMedia(QUrl("http://example.com/movie3.mp4"));
     videoWidget->setWindowTitle(fileName);
+
+    videoWidget->resize(822, 500);
+    //playMovie->show();
+
     videoWidget->show();
-    player->play();
+    videoWidget->player->play();
 }
 
 void MainWindow::loadMovie() {
