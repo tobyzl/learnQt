@@ -10,7 +10,7 @@
 class PlayLinemoviethread : public QThread {
     Q_OBJECT
 public:
-    PlayLinemoviethread(QObject *parent=0);
+    PlayLinemoviethread(QObject *parent = 0);
     ~PlayLinemoviethread();
 protected:
     void run();

@@ -3,43 +3,26 @@
 #include <QtWinExtras>
 
 ShowMovieWidget::ShowMovieWidget(QWidget *parent) : QWidget(parent),
-    taskbarButton(0), taskbarProgress(0), thumbnailToolBar(0),
-    playToolButton(0), forwardToolButton(0), backwardToolButton(0),
-    player(0), playButton(0), volumeButton(0),
-    positionSlider(0), positionLabel(0), playMovieWidget(0)
+    player(0), playButton(0), positionSlider(0), positionLabel(0), playMovieWidget(0)
 {
     playMovieWidget = new QVideoWidget;
     player = new QMediaPlayer;
 
    createWidgets();
-
-   connect(player, SIGNAL(stateChanged(QMediaPlayer::State)),
-           this, SLOT(updateState(QMediaPlayer::State)));
+   connect(player, SIGNAL(stateChanged(QMediaPlayer::State)), this, SLOT(updateState(QMediaPlayer::State)));
    connect(player, SIGNAL(positionChanged(qint64)), this, SLOT(updatePosition(qint64)));
    connect(player, SIGNAL(durationChanged(qint64)), this, SLOT(updateDuration(qint64)));
-   /*
-    createShortcuts();
-    createJumpList();
-    createTaskbar();
-    createThumbnailToolBar();
-    connect(&mediaPlayer, SIGNAL(metaDataAvailableChanged(bool)), this, SLOT(updateInfo()));
-    connect(&mediaPlayer, SIGNAL(error(QMediaPlayer::Error)), this, SLOT(handleError()));
-
-
-    stylize();*/
 }
 
 
 void ShowMovieWidget::createWidgets()
 {
     playButton = new QToolButton(this);
-    //playButton->setEnabled(false);
     playButton->setToolTip(tr("Play"));
     playButton->setIcon(style()->standardIcon(QStyle::SP_MediaPlay));
     connect(playButton, SIGNAL(clicked()), this, SLOT(togglePlayback()));
 
     positionSlider = new QSlider(Qt::Horizontal, this);
-    //positionSlider->setEnabled(false);
     positionSlider->setToolTip(tr("Seek"));
     connect(positionSlider, SIGNAL(valueChanged(int)), this, SLOT(setPosition(int)));
 
@@ -50,18 +33,11 @@ void ShowMovieWidget::createWidgets()
     QTime totalduration(0, totalposition / 60000, qRound((totalposition % 60000) / 1000.0));
     positionLabel->setText(totalduration.toString(tr("mm:ss")));
 
-    //volumeButton = new VolumeButton(this);
-    //volumeButton->setToolTip(tr("Adjust volume"));
-   // volumeButton->setVolume(mediaPlayer.volume());
-    //connect(volumeButton, SIGNAL(volumeChanged(int)), &mediaPlayer, SLOT(setVolume(int)));
-
     QBoxLayout *controlLayout = new QHBoxLayout;
     controlLayout->setMargin(0);
     controlLayout->addWidget(playButton);
     controlLayout->addWidget(positionLabel);
     controlLayout->addWidget(positionSlider);
-
-    //controlLayout->addWidget(volumeButton);
 
     QBoxLayout *mainLayout = new QVBoxLayout(this);
     mainLayout->addWidget(playMovieWidget);

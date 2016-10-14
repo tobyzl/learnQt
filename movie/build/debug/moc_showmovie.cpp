@@ -19,8 +19,8 @@
 
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_ShowMovieWidget_t {
-    QByteArrayData data[13];
-    char stringdata[155];
+    QByteArrayData data[14];
+    char stringdata[169];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -30,25 +30,26 @@ struct qt_meta_stringdata_ShowMovieWidget_t {
 static const qt_meta_stringdata_ShowMovieWidget_t qt_meta_stringdata_ShowMovieWidget = {
     {
 QT_MOC_LITERAL(0, 0, 15), // "ShowMovieWidget"
-QT_MOC_LITERAL(1, 16, 14), // "togglePlayback"
-QT_MOC_LITERAL(2, 31, 0), // ""
-QT_MOC_LITERAL(3, 32, 11), // "updateState"
-QT_MOC_LITERAL(4, 44, 19), // "QMediaPlayer::State"
-QT_MOC_LITERAL(5, 64, 5), // "state"
-QT_MOC_LITERAL(6, 70, 14), // "updatePosition"
-QT_MOC_LITERAL(7, 85, 8), // "position"
-QT_MOC_LITERAL(8, 94, 14), // "updateDuration"
-QT_MOC_LITERAL(9, 109, 8), // "duration"
-QT_MOC_LITERAL(10, 118, 11), // "seekForward"
-QT_MOC_LITERAL(11, 130, 12), // "seekBackward"
-QT_MOC_LITERAL(12, 143, 11) // "setPosition"
+QT_MOC_LITERAL(1, 16, 13), // "createWidgets"
+QT_MOC_LITERAL(2, 30, 0), // ""
+QT_MOC_LITERAL(3, 31, 14), // "togglePlayback"
+QT_MOC_LITERAL(4, 46, 11), // "updateState"
+QT_MOC_LITERAL(5, 58, 19), // "QMediaPlayer::State"
+QT_MOC_LITERAL(6, 78, 5), // "state"
+QT_MOC_LITERAL(7, 84, 14), // "updatePosition"
+QT_MOC_LITERAL(8, 99, 8), // "position"
+QT_MOC_LITERAL(9, 108, 14), // "updateDuration"
+QT_MOC_LITERAL(10, 123, 8), // "duration"
+QT_MOC_LITERAL(11, 132, 11), // "seekForward"
+QT_MOC_LITERAL(12, 144, 12), // "seekBackward"
+QT_MOC_LITERAL(13, 157, 11) // "setPosition"
 
     },
-    "ShowMovieWidget\0togglePlayback\0\0"
-    "updateState\0QMediaPlayer::State\0state\0"
-    "updatePosition\0position\0updateDuration\0"
-    "duration\0seekForward\0seekBackward\0"
-    "setPosition"
+    "ShowMovieWidget\0createWidgets\0\0"
+    "togglePlayback\0updateState\0"
+    "QMediaPlayer::State\0state\0updatePosition\0"
+    "position\0updateDuration\0duration\0"
+    "seekForward\0seekBackward\0setPosition"
 };
 #undef QT_MOC_LITERAL
 
@@ -58,7 +59,7 @@ static const uint qt_meta_data_ShowMovieWidget[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-       7,   14, // methods
+       8,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -66,22 +67,24 @@ static const uint qt_meta_data_ShowMovieWidget[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    0,   49,    2, 0x0a /* Public */,
-       3,    1,   50,    2, 0x0a /* Public */,
-       6,    1,   53,    2, 0x0a /* Public */,
-       8,    1,   56,    2, 0x0a /* Public */,
-      10,    0,   59,    2, 0x0a /* Public */,
-      11,    0,   60,    2, 0x0a /* Public */,
-      12,    1,   61,    2, 0x0a /* Public */,
+       1,    0,   54,    2, 0x0a /* Public */,
+       3,    0,   55,    2, 0x0a /* Public */,
+       4,    1,   56,    2, 0x0a /* Public */,
+       7,    1,   59,    2, 0x0a /* Public */,
+       9,    1,   62,    2, 0x0a /* Public */,
+      11,    0,   65,    2, 0x0a /* Public */,
+      12,    0,   66,    2, 0x0a /* Public */,
+      13,    1,   67,    2, 0x0a /* Public */,
 
  // slots: parameters
     QMetaType::Void,
-    QMetaType::Void, 0x80000000 | 4,    5,
-    QMetaType::Void, QMetaType::LongLong,    7,
-    QMetaType::Void, QMetaType::LongLong,    9,
+    QMetaType::Void,
+    QMetaType::Void, 0x80000000 | 5,    6,
+    QMetaType::Void, QMetaType::LongLong,    8,
+    QMetaType::Void, QMetaType::LongLong,   10,
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Void, QMetaType::Int,    7,
+    QMetaType::Void, QMetaType::Int,    8,
 
        0        // eod
 };
@@ -91,19 +94,20 @@ void ShowMovieWidget::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int 
     if (_c == QMetaObject::InvokeMetaMethod) {
         ShowMovieWidget *_t = static_cast<ShowMovieWidget *>(_o);
         switch (_id) {
-        case 0: _t->togglePlayback(); break;
-        case 1: _t->updateState((*reinterpret_cast< QMediaPlayer::State(*)>(_a[1]))); break;
-        case 2: _t->updatePosition((*reinterpret_cast< qint64(*)>(_a[1]))); break;
-        case 3: _t->updateDuration((*reinterpret_cast< qint64(*)>(_a[1]))); break;
-        case 4: _t->seekForward(); break;
-        case 5: _t->seekBackward(); break;
-        case 6: _t->setPosition((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 0: _t->createWidgets(); break;
+        case 1: _t->togglePlayback(); break;
+        case 2: _t->updateState((*reinterpret_cast< QMediaPlayer::State(*)>(_a[1]))); break;
+        case 3: _t->updatePosition((*reinterpret_cast< qint64(*)>(_a[1]))); break;
+        case 4: _t->updateDuration((*reinterpret_cast< qint64(*)>(_a[1]))); break;
+        case 5: _t->seekForward(); break;
+        case 6: _t->seekBackward(); break;
+        case 7: _t->setPosition((*reinterpret_cast< int(*)>(_a[1]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
         switch (_id) {
         default: *reinterpret_cast<int*>(_a[0]) = -1; break;
-        case 1:
+        case 2:
             switch (*reinterpret_cast<int*>(_a[1])) {
             default: *reinterpret_cast<int*>(_a[0]) = -1; break;
             case 0:
@@ -139,13 +143,13 @@ int ShowMovieWidget::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 7)
+        if (_id < 8)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 7;
+        _id -= 8;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 7)
+        if (_id < 8)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 7;
+        _id -= 8;
     }
     return _id;
 }

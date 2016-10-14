@@ -16,10 +16,4 @@ void PlayLinemoviethread::run() {
     QVideoWidget *videoWidget = new QVideoWidget;
 
     player->setVideoOutput(videoWidget);
-
-    //QUrl url = ui->lineEdit->text();
-
-   // player->setMedia(QUrl(url));
-   // videoWidget->show();
-    //player->play();
 }
