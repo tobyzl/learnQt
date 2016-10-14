@@ -17,16 +17,16 @@ void MyThread::run()
 
 void MyThread::urlSlot(QString url)
 {
-    QMediaPlayer *player = new QMediaPlayer;
+    QFileInfo *fileInfo = new QFileInfo(url);
+    ShowMovieWidget *videoWidget = new ShowMovieWidget;
+    QVideoWidget *playMovie = videoWidget->playMovieWidget;
 
-    QVideoWidget *videoWidget = new QVideoWidget;
-
-    player->setVideoOutput(videoWidget);
-
-    player->setMedia(QUrl(url));
-
+    videoWidget->player->setVideoOutput(playMovie);
+    videoWidget->player->setMedia(QUrl(url));
+    videoWidget->setWindowTitle(fileInfo->fileName());
+    videoWidget->resize(822, 500);
     videoWidget->show();
-    player->play();
+    videoWidget->player->play();
 }
 
 

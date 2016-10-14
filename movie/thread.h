@@ -6,7 +6,8 @@
 #include <QUrl>
 #include <QMediaPlayer>
 #include <QVideoWidget>
-
+#include "showmovie.h"
+#include <QFileInfo>
 
 class MyThread : public QThread {
     Q_OBJECT
