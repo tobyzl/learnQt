@@ -641,6 +641,10 @@ debug\moc_thread.cpp: C:\Qt\Qt5.4.0\5.4\msvc2013\include\QtCore\QThread \
 		C:\Qt\Qt5.4.0\5.4\msvc2013\include\QtGui\qtouchdevice.h \
 		C:\Qt\Qt5.4.0\5.4\msvc2013\include\QtMultimediaWidgets\qtmultimediawidgetdefs.h \
 		C:\Qt\Qt5.4.0\5.4\msvc2013\include\QtMultimedia\qmediabindableinterface.h \
+		..\showmovie.h \
+		C:\Qt\Qt5.4.0\5.4\msvc2013\include\QtWidgets\QWidget \
+		C:\Qt\Qt5.4.0\5.4\msvc2013\include\QtCore\QFileInfo \
+		C:\Qt\Qt5.4.0\5.4\msvc2013\include\QtCore\qfileinfo.h \
 		..\thread.h
 	C:\Qt\Qt5.4.0\5.4\msvc2013\bin\moc.exe $(DEFINES) -D_MSC_VER=1800 -D_WIN32 -IC:/Qt/Qt5.4.0/5.4/msvc2013/mkspecs/win32-msvc2013 -IF:/learnQt/movie -IC:/Qt/Qt5.4.0/5.4/msvc2013/include -IC:/Qt/Qt5.4.0/5.4/msvc2013/include/QtMultimediaWidgets -IC:/Qt/Qt5.4.0/5.4/msvc2013/include/QtWebKitWidgets -IC:/Qt/Qt5.4.0/5.4/msvc2013/include/QtWidgets -IC:/Qt/Qt5.4.0/5.4/msvc2013/include/QtMultimedia -IC:/Qt/Qt5.4.0/5.4/msvc2013/include/QtWinExtras -IC:/Qt/Qt5.4.0/5.4/msvc2013/include/QtWebKit -IC:/Qt/Qt5.4.0/5.4/msvc2013/include/QtGui -IC:/Qt/Qt5.4.0/5.4/msvc2013/include/QtANGLE -IC:/Qt/Qt5.4.0/5.4/msvc2013/include/QtNetwork -IC:/Qt/Qt5.4.0/5.4/msvc2013/include/QtCore -I. ..\thread.h -o debug\moc_thread.cpp
 
@@ -1472,7 +1476,11 @@ debug\thread.obj: ..\thread.cpp ..\thread.h \
 		C:\Qt\Qt5.4.0\5.4\msvc2013\include\QtGui\qvector2d.h \
 		C:\Qt\Qt5.4.0\5.4\msvc2013\include\QtGui\qtouchdevice.h \
 		C:\Qt\Qt5.4.0\5.4\msvc2013\include\QtMultimediaWidgets\qtmultimediawidgetdefs.h \
-		C:\Qt\Qt5.4.0\5.4\msvc2013\include\QtMultimedia\qmediabindableinterface.h
+		C:\Qt\Qt5.4.0\5.4\msvc2013\include\QtMultimedia\qmediabindableinterface.h \
+		..\showmovie.h \
+		C:\Qt\Qt5.4.0\5.4\msvc2013\include\QtWidgets\QWidget \
+		C:\Qt\Qt5.4.0\5.4\msvc2013\include\QtCore\QFileInfo \
+		C:\Qt\Qt5.4.0\5.4\msvc2013\include\QtCore\qfileinfo.h
 
 debug\showmovie.obj: ..\showmovie.cpp ..\showmovie.h \
 		C:\Qt\Qt5.4.0\5.4\msvc2013\include\QtWidgets\QWidget \
