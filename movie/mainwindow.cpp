@@ -18,7 +18,7 @@ MainWindow::MainWindow(QWidget *parent) :
     manager = new QNetworkAccessManager(this);
     //connect(manager,SIGNAL(finished(QNetworkReply*)), this,SLOT(replyFinished(QNetworkReply*)));
     //manager->get(QNetworkRequest(QUrl("http://www.padsystem.com"))); //发送请求
-    ui->progressBar->hide();
+    //ui->progressBar->hide();
 
 
     pushButton = new QPushButton("movie");
@@ -116,8 +116,8 @@ void MainWindow::loadMovie() {
     }
 
     startRequest(url); // 进行连接请求
-    ui->progressBar->setValue(0);
-     ui->progressBar->show();
+    //ui->progressBar->setValue(0);
+    // ui->progressBar->show();
 }
 
 void MainWindow::startRequest(QUrl url) { // 链接请求
@@ -139,12 +139,12 @@ void MainWindow::httpReadyRead() { // 有可用数据
 }
 
 void MainWindow::updateDateReadProgress(qint64 bytesRead, qint64 totalBytes) { // 有可用数据
-    ui->progressBar->setMaximum(totalBytes); // 最大值
-    ui->progressBar->setValue(bytesRead); // 当前值
+    //ui->progressBar->setMaximum(totalBytes); // 最大值
+  //  ui->progressBar->setValue(bytesRead); // 当前值
 }
 
 void MainWindow::httpFinished() { // 完成下载
-    ui->progressBar->hide();
+ //   ui->progressBar->hide();
     file->flush();
     file->close();
     reply->deleteLater();
