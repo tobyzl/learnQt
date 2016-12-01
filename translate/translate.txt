@@ -1,0 +1,25 @@
+Qt Linguist 的使用方式
+lupdate可以把.h, .cpp, .ui中需要翻译的字符串抽出来形成.ts文件，然后用linguist翻译，用lerealse生成.qm。
+
+操作步骤如下：
+
+1.  修改*.pro，在其中添加  TRANSLATIONS = XXX. ts或是TRANSLATIONS += XXX. ts
+如果要生成多个可以用：
+                                     TRANSLATIONS ＝lang_en.ts \
+                                                                   lang_zh.ts \
+                                                                   lang_la.ts
+2. 执行 lupdate *.pro，生成XXX. ts
+3. 使用linguist打开XXX. ts，进行翻译，翻译结束后，保存成为qm格式的。File->Release As
+或者是翻译结束后，使用命令，lrelease XXX. ts，生成qm文件。
+4. 在程序中加入。
+     QTranslator translator;
+     translator.load("browser");
+     app.installTranslator(&translator);
+其中load的是XXX.qm中的不包含后缀名的文件名(即XXX)。   
+注：我之前编写时在Main.cpp中加入的东东：   
+QApplication a(argc, argv);
+    QTranslator translator;
+    translator.load("admain_zh");
+
+    a.setFont(QFont("wenquanyi"));    //设置字体库
+    a.installTranslator(&translator);
