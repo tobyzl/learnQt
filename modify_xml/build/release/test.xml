@@ -1,0 +1,53 @@
+<clusterconfig xmlns:xlink="http://www.w3.org/1999/xlink">
+ <style name="Bodywear">
+  <location name="None" image="">
+  <wrap_type type="None"/>
+  </location>
+  <location name="Front">
+   <wrap_type quadrant="7" type="None" sequence="1" image=":/images/cluster/front_none.jpg"/>
+   <wrap_type quadrant="7" type="Rounded" sequence="1" image=":/images/cluster/front_rounded.jpg"/>
+   <wrap_type quadrant="8" type="Left" sequence="1" image=":/images/cluster/front_left.jpg"/>
+   <wrap_type quadrant="6" type="Right" sequence="1" image=":/images/cluster/front_right.jpg"/>
+   <wrap_type quadrant="7" type="Gusset Entry" sequence="1" image=":/images/cluster/Front_Gusset_Entry.jpg"/>
+   <wrap_type quadrant="7" type="Rounded + Gusset" sequence="1" image=":/images/cluster/Front_Rounded_Gusset.jpg"/>
+   <wrap_type quadrant="7" type="Pants Rounded" sequence="1" image=":/images/cluster/Front_Pants_Rounded.jpg"/>
+   <wrap_type quadrant="7" type="Rounded with Straps" sequence="1" image=":/images/cluster/Front_Rounded_With_Straps.jpg"/>
+   <wrap_type quadrant="7" type="Gusset + Straps" sequence="1" image=":/images/cluster/Front_Gusset_Straps.jpg"/>
+   <wrap_type quadrant="7" type="Straps" sequence="1" image=":/images/cluster/Front_Straps.jpg"/>
+   <wrap_type quadrant="7" type="Collar" sequence="1" image=":/images/cluster/front_collar.jpg"/>
+   <wrap_type quadrant="7" type="To Back" sequence="1" image=":/images/cluster/Front_To_Back.jpg"/>
+   <wrap_type quadrant="7" type="To Back + Straps" sequence="1" image=":/images/cluster/Front_To_Back_Straps.jpg"/>
+   <wrap_type quadrant="7" type="To Back + Gusset" sequence="1" image=":/images/cluster/Front_To_Back_Gusset.jpg"/>
+   <wrap_type quadrant="7" type="To Back + Gusset &amp; Straps" sequence="1" image=":/images/cluster/Front_To_Back_Gusset_straps.jpg"/>
+  </location> 
+  <location name="Back">
+   <wrap_type quadrant="7" type="None" sequence="1" image=":/images/cluster/Back_None.jpg"/>
+   <wrap_type quadrant="8" type="Rounded" sequence="1" image=":/images/cluster/Back_Rounded.jpg"/>
+   <wrap_type quadrant="8" type="Left" sequence="1" image=":/images/cluster/Back_Left.jpg"/>
+   <wrap_type quadrant="6" type="Right" sequence="1" image=":/images/cluster/Back_Right.jpg"/>
+   <wrap_type quadrant="8" type="Gusset Entry" sequence="1" image=":/images/cluster/Back_Gusset_Entry.jpg"/>
+   <wrap_type quadrant="8" type="Rounded With Straps" sequence="1" image=":/images/cluster/Back_Rounded_With_Straps.jpg"/>
+   <wrap_type quadrant="8" type="Straps" sequence="1" image=":/images/cluster/Back_Straps.jpg"/>
+   <wrap_type quadrant="7" type="To Front" sequence="2" image=":/images/cluster/Back_To_Front.jpg"/>
+   <wrap_type quadrant="7" type="To Front + Straps" sequence="2" image=":/images/cluster/Back_To_Front_Straps.jpg"/>
+   <wrap_type quadrant="7" type="To Front + Gusset" sequence="2" image=":/images/cluster/Back_To_Front_Gusset.jpg"/>
+   <wrap_type quadrant="7" type="To Front + Gusset &amp;  straps" sequence="2" image=":/images/cluster/Back_To_Front_Gusset_Straps.jpg"/>
+  </location>
+  <location name="Left">
+   <wrap_type quadrant="8" type="None" sequence="2" image=":/images/cluster/Left_None.jpg"/>
+   <wrap_type quadrant="1" type="Sleeve" sequence="1" image=":/images/cluster/Left_Sleeve.jpg"/>
+   <wrap_type quadrant="8" type="Rounded" sequence="2" image=":/images/cluster/Left_Rounded.jpg"/>
+   <wrap_type quadrant="8" type="Foot Top" sequence="2" image=":/images/cluster/Left_Foot_Top.jpg"/>
+   <wrap_type quadrant="8" type="Foot - Bottom" sequence="2" image=":/images/cluster/Left_Foot_Bottom.jpg"/>
+   <wrap_type quadrant="1" type="Cuff" sequence="1" image=":/images/cluster/Left_Cuff.jpg"/>
+  </location>
+  <location name="Right">
+   <wrap_type quadrant="6" type="None" sequence="2" image=":/images/cluster/Right_None.jpg"/>
+   <wrap_type quadrant="5" type="Sleeve" sequence="1" image=":/images/cluster/Right_Sleeve.jpg"/>
+   <wrap_type quadrant="6" type="Rounded" sequence="2" image=":/images/cluster/Right_Rounded.jpg"/>
+   <wrap_type quadrant="8" type="Foot Top" sequence="2" image=":/images/cluster/Right_Foot_Top.jpg"/>
+   <wrap_type quadrant="8" type="Foot - Bottom" sequence="2" image=":/images/cluster/Right_Foot_Bottom.jpg"/>
+   <wrap_type quadrant="5" type="Cuff" sequence="1" image=":/images/cluster/Right_Cuff.jpg"/>
+  </location>
+ </style>
+</clusterconfig>

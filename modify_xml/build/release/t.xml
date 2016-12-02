@@ -1,0 +1,12 @@
+<location name="Front">
+   <wrap_type quadrant="7" type="None" sequence="1" image=":/images/cluster/front_none.jpg">1</wrap_type>
+   <wrap_type quadrant="7" type="Rounded" sequence="1" image=":/images/cluster/front_rounded.jpg">2</wrap_type>
+   <wrap_type quadrant="8" type="Left" sequence="1" image=":/images/cluster/front_left.jpg">3</wrap_type>
+   <wrap_type quadrant="6" type="Right" sequence="1" image=":/images/cluster/front_right.jpg">4</wrap_type>
+   <wrap_type quadrant="7" type="Gusset Entry" sequence="1" image=":/images/cluster/Front_Gusset_Entry.jpg">5</wrap_type>
+   <wrap_type quadrant="7" type="Rounded + Gusset" sequence="1" image=":/images/cluster/Front_Rounded_Gusset.jpg">6</wrap_type>
+   <wrap_type quadrant="7" type="Pants Rounded" sequence="1" image=":/images/cluster/Front_Pants_Rounded.jpg">7</wrap_type>
+   <wrap_type quadrant="7" type="Rounded with Straps" sequence="1" image=":/images/cluster/Front_Rounded_With_Straps.jpg">8</wrap_type>
+   <wrap_type quadrant="7" type="Gusset + Straps" sequence="1" image=":/images/cluster/Front_Gusset_Straps.jpg">9</wrap_type>
+   <wrap_type quadrant="7" type="Straps" sequence="1" image=":/images/cluster/Front_Straps.jpg">10</wrap_type>
+ </location> 

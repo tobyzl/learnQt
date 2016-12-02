@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FileMsg>
+  <DATA ID="id">
+    <FILENAME>fileName</FILENAME>
+    <FILESIZE>fileSize</FILESIZE>
+    <LASTMODIFY>atTime</LASTMODIFY>
+    <FILETYPE>fileType</FILETYPE>
+  </DATA>
+</FileMsg>
+<xml>
+  <round id="1" tableid="2">
+    <player1 framescore="mPlayer1Frame" points="mPlayer1Point" break="mPlayer1ContinuePoint">Hello World</player1>
+    <player2 framescore="mPlayer2Frame" points="mPlayer2Point" break="mPlayer2ContinuePoint"/>
+  </round>
+</xml>
