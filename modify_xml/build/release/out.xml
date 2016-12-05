@@ -2,6 +2,7 @@
 <FileMsg>
   <DATA ID="id">
     <FILENAME>fileName</FILENAME>
+    <FILENAME>fileName</FILENAME>
     <FILESIZE>fileSize</FILESIZE>
     <LASTMODIFY>atTime</LASTMODIFY>
     <FILETYPE>fileType</FILETYPE>

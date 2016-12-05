@@ -1,12 +1,12 @@
 <location name="Front">
- <wrap_type quadrant="7" sequence="1" image=":/images/cluster/front_none.jpg" type="None">1</wrap_type>
- <wrap_type quadrant="7" sequence="1" image=":/images/cluster/front_rounded.jpg" type="Rounded">2</wrap_type>
- <wrap_type quadrant="8" sequence="1" image=":/images/cluster/front_left.jpg" type="Left">3</wrap_type>
- <wrap_type quadrant="6" sequence="1" image=":/images/cluster/front_right.jpg" type="Right">4</wrap_type>
- <wrap_type quadrant="7" sequence="1" image=":/images/cluster/front_gusset_entry.jpg" type="Gusset Entry">5</wrap_type>
- <wrap_type quadrant="7" sequence="1" image=":/images/cluster/front_rounded_gusset.jpg" type="Rounded + Gusset">6</wrap_type>
- <wrap_type quadrant="7" sequence="1" image=":/images/cluster/front_pants_rounded.jpg" type="Pants Rounded">7</wrap_type>
- <wrap_type quadrant="7" sequence="1" image=":/images/cluster/front_rounded_with_straps.jpg" type="Rounded with Straps">8</wrap_type>
- <wrap_type quadrant="7" sequence="1" image=":/images/cluster/front_gusset_straps.jpg" type="Gusset + Straps">9</wrap_type>
- <wrap_type quadrant="7" sequence="1" image=":/images/cluster/front_straps.jpg" type="Straps">10</wrap_type>
+ <wrap_type sequence="1" quadrant="7" image=":/images/cluster/front_none.jpg" type="None">A</wrap_type>
+ <wrap_type sequence="1" quadrant="7" image=":/images/cluster/front_rounded.jpg" type="Rounded">B</wrap_type>
+ <wrap_type sequence="1" quadrant="8" image=":/images/cluster/front_left.jpg" type="Left">C</wrap_type>
+ <wrap_type sequence="1" quadrant="6" image=":/images/cluster/front_right.jpg" type="Right">D</wrap_type>
+ <wrap_type sequence="1" quadrant="7" image=":/images/cluster/front_gusset_entry.jpg" type="Gusset Entry">E</wrap_type>
+ <wrap_type sequence="1" quadrant="7" image=":/images/cluster/front_rounded_gusset.jpg" type="Rounded + Gusset">F</wrap_type>
+ <wrap_type sequence="1" quadrant="7" image=":/images/cluster/front_pants_rounded.jpg" type="Pants Rounded">G</wrap_type>
+ <wrap_type sequence="1" quadrant="7" image=":/images/cluster/front_rounded_with_straps.jpg" type="Rounded with Straps">H</wrap_type>
+ <wrap_type sequence="1" quadrant="7" image=":/images/cluster/front_gusset_straps.jpg" type="Gusset + Straps">J</wrap_type>
+ <wrap_type sequence="1" quadrant="7" image=":/images/cluster/front_straps.jpg" type="Straps">H</wrap_type>
 </location>

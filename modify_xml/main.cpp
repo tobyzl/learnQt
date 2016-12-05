@@ -49,6 +49,7 @@ void write_xml() {
             writer.writeStartElement("DATA");  //写入开始标记DATA
             writer.writeAttribute("ID","id"); //在开始标记中写入属性ID
                 writer.writeTextElement("FILENAME", "fileName"); //写入文本信息
+                writer.writeTextElement("FILENAME", "fileName"); //写入文本信息
                 writer.writeTextElement("FILESIZE", "fileSize");
                 writer.writeTextElement("LASTMODIFY", "atTime");
                 writer.writeTextElement("FILETYPE", "fileType");
@@ -94,7 +95,9 @@ void modify_xml() {
 
     QDomNodeList nodes = doc.elementsByTagName("wrap_type");
     for (int i=0; i<nodes.size(); ++i) {
-        const QDomNode &node = nodes.at(i);
+        QDomNode node = nodes.at(i);
+        QString node_value = node.toElement().text();
+        node.firstChild().setNodeValue(node_value.toUpper());
         if (node.isElement()) {
             QDomElement elem = node.toElement();
             QString image_attribute = elem.attribute("image");
