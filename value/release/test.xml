@@ -1,0 +1,10 @@
+<Communication>
+ <NetWork>
+  <IP>192.168.1.1</IP>
+  <PORT>8900</PORT>
+ </NetWork>
+ <SerialPort>
+  <COM>com1</COM>
+  <BaundRate>9600</BaundRate>
+ </SerialPort>
+</Communication>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+    <book id="01">
+	    <title>qt</title>
+	    <author>shiming</author>
+	</book>
+    <book id="02">
+        <title>linux</title>
+	    <author>yafei</author>
+    </book>
+ </library>

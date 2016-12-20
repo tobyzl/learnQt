@@ -11,9 +11,10 @@ MainWindow::MainWindow(QWidget *parent) :
 
     //label->setWordWrap(true);
 
-    label->setText("aaaaaaabbbbbbbbbccccccccccccccccddddddddddd\nddddddddeeeeeeee222222222222666666666666666\n6666666666666622222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222255555555555eeeeeeeeeeffffffffffffffffffff888888888888888");
+    label->setText("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa6666666666666");
 
-    statusBar()->addPermanentWidget(label);
+    statusBar()->addPermanentWidget(label, 0);
+    //statusBar()->addWidget(label);
 }
 
 MainWindow::~MainWindow()

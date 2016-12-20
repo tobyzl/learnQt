@@ -1,0 +1,773 @@
+<clusterconfig xmlns:xlink="http://www.w3.org/1999/xlink">
+	<style name="Bodywear">
+		<location name ="None" image="">
+			<wrap_type type="None"/>	
+		</location>
+		<location name ="Front">
+			<wrap_type type="None" image=":/images/cluster/front_none.jpg" />
+			<wrap_type type="Rounded" image=":/images/cluster/front_rounded.jpg" />
+			<wrap_type type="Left" image=":/images/cluster/front_left.jpg"/>
+			<wrap_type type="Right" image=":/images/cluster/front_right.jpg"/>
+			<wrap_type type="Rounded with Straps" image=":/images/cluster/front_round_with_straps.jpg" />
+			<wrap_type type="Straps" image=":/images/cluster/front_straps.jpg" />
+			<wrap_type type="Collar" image=":/images/cluster/front_collar.jpg" />
+			<wrap_type type="To Back" image=":/images/cluster/front_back.jpg" />
+			<wrap_type type="To Back + Straps" image=":/images/cluster/front_back_strap.jpg" />
+			<wrap_type type="To Back + Gusset" image=":/images/cluster/front_back_gusset.jpg" />
+			<wrap_type type="To Back + Gusset &amp; Straps" image=":/images/cluster/front_gusset_straps.jpg" />
+		</location>
+		<location name ="Back">
+			<wrap_type type="None" image=":/images/cluster/back_none.jpg" />
+			<wrap_type type="Rounded" image=":/images/cluster/back_rounded.jpg" />
+			<wrap_type type="Left" image=":/images/cluster/back_left.jpg" />
+			<wrap_type type="Right" image=":/images/cluster/back_right.jpg" />
+			<wrap_type type="Rounded With Straps" image=":/images/cluster/back_round_straps.jpg" />
+			<wrap_type type="Straps" image=":/images/cluster/back_straps.jpg" />
+			<wrap_type type="To Front" image=":/images/cluster/back_front.jpg" />
+			<wrap_type type="To Front + Straps" image=":/images/cluster/back_front_strap.jpg" />
+			<wrap_type type="To Front + Gusset" image=":/images/cluster/back_front_gusset.jpg" />
+			<wrap_type type="To Front + Gusset &amp; Straps" image=":/images/cluster/back_gusset_straps.jpg" />
+		</location>
+		<location name ="Left">
+			<wrap_type type="None" image=":/images/cluster/left_none.jpg" />
+			<wrap_type type="Sleeve" image=":/images/cluster/left_sleeve.jpg" />
+			<wrap_type type="Rounded" image=":/images/cluster/left_rounded.jpg" />
+			<wrap_type type="Cuff" image=":/images/cluster/left_cuff.jpg" />
+		</location>
+		<location name ="Right">
+			<wrap_type type="None" image=":/images/cluster/right_none.jpg" />
+			<wrap_type type="Sleeve" image=":/images/cluster/right_sleeve.jpg" />
+			<wrap_type type="Rounded" image=":/images/cluster/right_rounded.jpg" />
+			<wrap_type type="Cuff" image=":/images/cluster/right_cuff.jpg" />
+		</location>
+		<location name ="Collar">
+			<wrap_type type="None" image=":/images/cluster/collar_none.jpg" />
+		</location>
+		<location name ="Straps">
+			<wrap_type type="None" image=":/images/cluster/straps_none.jpg" />
+		</location>
+		<location name ="Belt">
+			<wrap_type type="None" image=":/images/cluster/belt_none.jpg" />
+			<wrap_type type="UnRestricted" image=":/images/cluster/belt_unrestricted.jpg" />
+		</location>	
+		<location name ="Gusset">
+			<wrap_type type="None" image=":/images/cluster/gusset_none.jpg" />
+			<wrap_type type="Along Leg" image=":/images/cluster/gusset_along_leg.jpg" />
+		</location>		
+		<location name ="Hood">
+			<wrap_type type="None" image=":/images/cluster/hood_none.jpg" />
+			<wrap_type type="On Back" image=":/images/cluster/hood_back.jpg" />
+		</location>
+		<location name ="Front/Back">
+			<wrap_type type="None" image=":/images/cluster/front_back_none.jpg" />
+			<wrap_type type="Over Shoulder" image=":/images/cluster/front_back_shoulder.jpg" />
+		</location>
+		<location name ="Parallel to Floor">
+			<wrap_type type="None" image=":/images/cluster/parallel_none.jpg" />
+		</location>
+		<location name ="Sleeve Shrug">
+			<wrap_type type="None" image=":/images/cluster/sleeve_none.jpg" />
+		</location>
+		<location name ="Scarf">
+			<wrap_type type="None" image=":/images/cluster/scarf_none.jpg" />
+			<wrap_type type="Left" image=":/images/cluster/scarf_left.jpg" />
+			<wrap_type type="Right" image=":/images/cluster/scarf_right.jpg" />
+		</location>	
+		<location name ="Thong">
+			<wrap_type type="None" image=":/images/cluster/thong_none.jpg" />
+		</location>	
+		
+	</style>
+	<style name="Bra">
+		<location name ="None" image="">
+			<wrap_type type="None"/>	
+		</location>
+		<location name ="Front">
+			<wrap_type type="None" image=":/images/cluster/front_none.jpg" />
+			<wrap_type type="Rounded" image=":/images/cluster/front_rounded.jpg" />
+			<wrap_type type="Left" image=":/images/cluster/front_left.jpg" />
+			<wrap_type type="Right" image=":/images/cluster/front_right.jpg" />
+			<wrap_type type="Rounded with Straps" image=":/images/cluster/front_round_with_straps.jpg" />
+			<wrap_type type="Straps" image=":/images/cluster/front_straps.jpg" />
+			<wrap_type type="Collar" image=":/images/cluster/front_collar.jpg" />
+			<wrap_type type="To Back" image=":/images/cluster/front_back.jpg" />
+			<wrap_type type="To Back + Straps" image=":/images/cluster/front_back_strap.jpg" />
+			<wrap_type type="To Back + Gusset" image=":/images/cluster/front_back_gusset.jpg" />
+			<wrap_type type="To Back + Gusset &amp; Straps" image=":/images/cluster/front_gusset_straps.jpg" />
+		</location>
+		<location name ="Back">
+			<wrap_type type="None" image=":/images/cluster/back_none.jpg" />
+			<wrap_type type="Rounded" image=":/images/cluster/back_rounded.jpg" />
+			<wrap_type type="Left" image=":/images/cluster/back_left.jpg" />
+			<wrap_type type="Right" image=":/images/cluster/back_right.jpg" />
+			<wrap_type type="Rounded With Straps" image=":/images/cluster/back_round_straps.jpg" />
+			<wrap_type type="Straps" image=":/images/cluster/back_straps.jpg" />
+			<wrap_type type="To Front" image=":/images/cluster/back_front.jpg" />
+			<wrap_type type="To Front + Straps" image=":/images/cluster/back_front_strap.jpg" />
+			<wrap_type type="To Front + Gusset" image=":/images/cluster/back_front_gusset.jpg" />
+			<wrap_type type="To Front + Gusset &amp; Straps" image=":/images/cluster/back_gusset_straps.jpg" />
+		</location>
+		<location name ="Left">
+			<wrap_type type="None" image=":/images/cluster/left_none.jpg" />
+			<wrap_type type="Sleeve" image=":/images/cluster/left_sleeve.jpg" />
+			<wrap_type type="Rounded" image=":/images/cluster/left_rounded.jpg" />
+			<wrap_type type="Cuff" image=":/images/cluster/left_cuff.jpg" />
+		</location>
+		<location name ="Right">
+			<wrap_type type="None" image=":/images/cluster/right_none.jpg" />
+			<wrap_type type="Sleeve" image=":/images/cluster/right_sleeve.jpg" />
+			<wrap_type type="Rounded" image=":/images/cluster/right_rounded.jpg" />
+			<wrap_type type="Cuff" image=":/images/cluster/right_cuff.jpg" />
+		</location>
+		<location name ="Collar">
+			<wrap_type type="None" image=":/images/cluster/collar_none.jpg" />
+		</location>
+		<location name ="Straps">
+			<wrap_type type="None" image=":/images/cluster/straps_none.jpg" />
+		</location>
+		<location name ="Belt">
+			<wrap_type type="None" image=":/images/cluster/belt_none.jpg" />
+			<wrap_type type="UnRestricted" image=":/images/cluster/belt_unrestricted.jpg" />
+		</location>	
+		<location name ="Gusset">
+			<wrap_type type="None" image=":/images/cluster/gusset_none.jpg" />
+			<wrap_type type="Along Leg" image=":/images/cluster/gusset_along_leg.jpg" />
+		</location>		
+		<location name ="Hood">
+			<wrap_type type="None" image=":/images/cluster/hood_none.jpg" />
+			<wrap_type type="On Back" image=":/images/cluster/hood_back.jpg" />
+		</location>
+		<location name ="Front/Back">
+			<wrap_type type="None" image=":/images/cluster/front_back_none.jpg" />
+			<wrap_type type="Over Shoulder" image=":/images/cluster/front_back_shoulder.jpg" />
+		</location>
+		<location name ="Parallel to Floor">
+			<wrap_type type="None" image=":/images/cluster/parallel_none.jpg" />
+		</location>
+		<location name ="Sleeve Shrug">
+			<wrap_type type="None" image=":/images/cluster/sleeve_none.jpg" />
+		</location>
+		<location name ="Scarf">
+			<wrap_type type="None" image=":/images/cluster/scarf_none.jpg" />
+			<wrap_type type="Left" image=":/images/cluster/scarf_left.jpg" />
+			<wrap_type type="Right" image=":/images/cluster/scarf_right.jpg" />
+		</location>	
+		<location name ="Thong">
+			<wrap_type type="None" image=":/images/cluster/thong_none.jpg" />
+		</location>	
+		
+	</style>
+	<style name="Hat">
+		<location name ="None" image="">
+			<wrap_type type="None"/>	
+		</location>
+		<location name ="Front">
+			<wrap_type type="None" image=":/images/cluster/front_none.jpg" />
+			<wrap_type type="Rounded" image=":/images/cluster/front_rounded.jpg" />
+			<wrap_type type="Left" image=":/images/cluster/front_left.jpg" />
+			<wrap_type type="Right" image=":/images/cluster/front_right.jpg" />
+			<wrap_type type="Rounded with Straps" image=":/images/cluster/front_round_with_straps.jpg" />
+			<wrap_type type="Straps" image=":/images/cluster/front_straps.jpg" />
+			<wrap_type type="Collar" image=":/images/cluster/front_collar.jpg" />
+			<wrap_type type="To Back" image=":/images/cluster/front_back.jpg" />
+			<wrap_type type="To Back + Straps" image=":/images/cluster/front_back_strap.jpg" />
+			<wrap_type type="To Back + Gusset" image=":/images/cluster/front_back_gusset.jpg" />
+			<wrap_type type="To Back + Gusset &amp; Straps" image=":/images/cluster/front_gusset_straps.jpg" />
+		</location>
+		<location name ="Back">
+			<wrap_type type="None" image=":/images/cluster/back_none.jpg" />
+			<wrap_type type="Rounded" image=":/images/cluster/back_rounded.jpg" />
+			<wrap_type type="Left" image=":/images/cluster/back_left.jpg" />
+			<wrap_type type="Right" image=":/images/cluster/back_right.jpg" />
+			<wrap_type type="Rounded With Straps" image=":/images/cluster/back_round_straps.jpg" />
+			<wrap_type type="Straps" image=":/images/cluster/back_straps.jpg" />
+			<wrap_type type="To Front" image=":/images/cluster/back_front.jpg" />
+			<wrap_type type="To Front + Straps" image=":/images/cluster/back_front_strap.jpg" />
+			<wrap_type type="To Front + Gusset" image=":/images/cluster/back_front_gusset.jpg" />
+			<wrap_type type="To Front + Gusset &amp; Straps" image=":/images/cluster/back_gusset_straps.jpg" />
+		</location>
+		<location name ="Left">
+			<wrap_type type="None" image=":/images/cluster/left_none.jpg" />
+			<wrap_type type="Sleeve" image=":/images/cluster/left_sleeve.jpg" />
+			<wrap_type type="Rounded" image=":/images/cluster/left_rounded.jpg" />
+			<wrap_type type="Cuff" image=":/images/cluster/left_cuff.jpg" />
+		</location>
+		<location name ="Right">
+			<wrap_type type="None" image=":/images/cluster/right_none.jpg" />
+			<wrap_type type="Sleeve" image=":/images/cluster/right_sleeve.jpg" />
+			<wrap_type type="Rounded" image=":/images/cluster/right_rounded.jpg" />
+			<wrap_type type="Cuff" image=":/images/cluster/right_cuff.jpg" />
+		</location>
+		<location name ="Collar">
+			<wrap_type type="None" image=":/images/cluster/collar_none.jpg" />
+		</location>
+		<location name ="Straps">
+			<wrap_type type="None" image=":/images/cluster/straps_none.jpg" />
+		</location>
+		<location name ="Belt">
+			<wrap_type type="None" image=":/images/cluster/belt_none.jpg" />
+			<wrap_type type="UnRestricted" image=":/images/cluster/belt_unrestricted.jpg" />
+		</location>	
+		<location name ="Gusset">
+			<wrap_type type="None" image=":/images/cluster/gusset_none.jpg" />
+			<wrap_type type="Along Leg" image=":/images/cluster/gusset_along_leg.jpg" />
+		</location>		
+		<location name ="Hood">
+			<wrap_type type="None" image=":/images/cluster/hood_none.jpg" />
+			<wrap_type type="On Back" image=":/images/cluster/hood_back.jpg" />
+		</location>
+		<location name ="Front/Back">
+			<wrap_type type="None" image=":/images/cluster/front_back_none.jpg" />
+			<wrap_type type="Over Shoulder" image=":/images/cluster/front_back_shoulder.jpg" />
+		</location>
+		<location name ="Parallel to Floor">
+			<wrap_type type="None" image=":/images/cluster/parallel_none.jpg" />
+		</location>
+		<location name ="Sleeve Shrug">
+			<wrap_type type="None" image=":/images/cluster/sleeve_none.jpg" />
+		</location>
+		<location name ="Scarf">
+			<wrap_type type="None" image=":/images/cluster/scarf_none.jpg" />
+			<wrap_type type="Left" image=":/images/cluster/scarf_left.jpg" />
+			<wrap_type type="Right" image=":/images/cluster/scarf_right.jpg" />
+		</location>	
+		<location name ="Thong">
+			<wrap_type type="None" image=":/images/cluster/thong_none.jpg" />
+		</location>	
+		
+	</style>
+	<style name="Jacket / Coat">
+		<location name ="None" image="">
+			<wrap_type type="None"/>	
+		</location>
+		<location name ="Front">
+			<wrap_type type="None" image=":/images/cluster/front_none.jpg" />
+			<wrap_type type="Rounded" image=":/images/cluster/front_rounded.jpg" />
+			<wrap_type type="Left" image=":/images/cluster/front_left.jpg" />
+			<wrap_type type="Right" image=":/images/cluster/front_right.jpg" />
+			<wrap_type type="Rounded with Straps" image=":/images/cluster/front_round_with_straps.jpg" />
+			<wrap_type type="Straps" image=":/images/cluster/front_straps.jpg" />
+			<wrap_type type="Collar" image=":/images/cluster/front_collar.jpg" />
+			<wrap_type type="To Back" image=":/images/cluster/front_back.jpg" />
+			<wrap_type type="To Back + Straps" image=":/images/cluster/front_back_strap.jpg" />
+			<wrap_type type="To Back + Gusset" image=":/images/cluster/front_back_gusset.jpg" />
+			<wrap_type type="To Back + Gusset &amp; Straps" image=":/images/cluster/front_gusset_straps.jpg" />
+		</location>
+		<location name ="Back">
+			<wrap_type type="None" image=":/images/cluster/back_none.jpg" />
+			<wrap_type type="Rounded" image=":/images/cluster/back_rounded.jpg" />
+			<wrap_type type="Left" image=":/images/cluster/back_left.jpg" />
+			<wrap_type type="Right" image=":/images/cluster/back_right.jpg" />
+			<wrap_type type="Rounded With Straps" image=":/images/cluster/back_round_straps.jpg" />
+			<wrap_type type="Straps" image=":/images/cluster/back_straps.jpg" />
+			<wrap_type type="To Front" image=":/images/cluster/back_front.jpg" />
+			<wrap_type type="To Front + Straps" image=":/images/cluster/back_front_strap.jpg" />
+			<wrap_type type="To Front + Gusset" image=":/images/cluster/back_front_gusset.jpg" />
+			<wrap_type type="To Front + Gusset &amp; Straps" image=":/images/cluster/back_gusset_straps.jpg" />
+		</location>
+		<location name ="Left">
+			<wrap_type type="None" image=":/images/cluster/left_none.jpg" />
+			<wrap_type type="Sleeve" image=":/images/cluster/left_sleeve.jpg" />
+			<wrap_type type="Rounded" image=":/images/cluster/left_rounded.jpg" />
+			<wrap_type type="Cuff" image=":/images/cluster/left_cuff.jpg" />
+		</location>
+		<location name ="Right">
+			<wrap_type type="None" image=":/images/cluster/right_none.jpg" />
+			<wrap_type type="Sleeve" image=":/images/cluster/right_sleeve.jpg" />
+			<wrap_type type="Rounded" image=":/images/cluster/right_rounded.jpg" />
+			<wrap_type type="Cuff" image=":/images/cluster/right_cuff.jpg" />
+		</location>
+		<location name ="Collar">
+			<wrap_type type="None" image=":/images/cluster/collar_none.jpg" />
+		</location>
+		<location name ="Straps">
+			<wrap_type type="None" image=":/images/cluster/straps_none.jpg" />
+		</location>
+		<location name ="Belt">
+			<wrap_type type="None" image=":/images/cluster/belt_none.jpg" />
+			<wrap_type type="UnRestricted" image=":/images/cluster/belt_unrestricted.jpg" />
+		</location>	
+		<location name ="Gusset">
+			<wrap_type type="None" image=":/images/cluster/gusset_none.jpg" />
+			<wrap_type type="Along Leg" image=":/images/cluster/gusset_along_leg.jpg" />
+		</location>		
+		<location name ="Hood">
+			<wrap_type type="None" image=":/images/cluster/hood_none.jpg" />
+			<wrap_type type="On Back" image=":/images/cluster/hood_back.jpg" />
+		</location>
+		<location name ="Front/Back">
+			<wrap_type type="None" image=":/images/cluster/front_back_none.jpg" />
+			<wrap_type type="Over Shoulder" image=":/images/cluster/front_back_shoulder.jpg" />
+		</location>
+		<location name ="Parallel to Floor">
+			<wrap_type type="None" image=":/images/cluster/parallel_none.jpg" />
+		</location>
+		<location name ="Sleeve Shrug">
+			<wrap_type type="None" image=":/images/cluster/sleeve_none.jpg" />
+		</location>
+		<location name ="Scarf">
+			<wrap_type type="None" image=":/images/cluster/scarf_none.jpg" />
+			<wrap_type type="Left" image=":/images/cluster/scarf_left.jpg" />
+			<wrap_type type="Right" image=":/images/cluster/scarf_right.jpg" />
+		</location>	
+		<location name ="Thong">
+			<wrap_type type="None" image=":/images/cluster/thong_none.jpg" />
+		</location>	
+		
+	</style>
+	<style name="Overall / Dress">
+		<location name ="None" image="">
+			<wrap_type type="None"/>	
+		</location>
+		<location name ="Front">
+			<wrap_type type="None" image=":/images/cluster/front_none.jpg" />
+			<wrap_type type="Rounded" image=":/images/cluster/front_rounded.jpg" />
+			<wrap_type type="Left" image=":/images/cluster/front_left.jpg" />
+			<wrap_type type="Right" image=":/images/cluster/front_right.jpg" />
+			<wrap_type type="Rounded with Straps" image=":/images/cluster/front_round_with_straps.jpg" />
+			<wrap_type type="Straps" image=":/images/cluster/front_straps.jpg" />
+			<wrap_type type="Collar" image=":/images/cluster/front_collar.jpg" />
+			<wrap_type type="To Back" image=":/images/cluster/front_back.jpg" />
+			<wrap_type type="To Back + Straps" image=":/images/cluster/front_back_strap.jpg" />
+			<wrap_type type="To Back + Gusset" image=":/images/cluster/front_back_gusset.jpg" />
+			<wrap_type type="To Back + Gusset &amp; Straps" image=":/images/cluster/front_gusset_straps.jpg" />
+		</location>
+		<location name ="Back">
+			<wrap_type type="None" image=":/images/cluster/back_none.jpg" />
+			<wrap_type type="Rounded" image=":/images/cluster/back_rounded.jpg" />
+			<wrap_type type="Left" image=":/images/cluster/back_left.jpg" />
+			<wrap_type type="Right" image=":/images/cluster/back_right.jpg" />
+			<wrap_type type="Rounded With Straps" image=":/images/cluster/back_round_straps.jpg" />
+			<wrap_type type="Straps" image=":/images/cluster/back_straps.jpg" />
+			<wrap_type type="To Front" image=":/images/cluster/back_front.jpg" />
+			<wrap_type type="To Front + Straps" image=":/images/cluster/back_front_strap.jpg" />
+			<wrap_type type="To Front + Gusset" image=":/images/cluster/back_front_gusset.jpg" />
+			<wrap_type type="To Front + Gusset &amp; Straps" image=":/images/cluster/back_gusset_straps.jpg" />
+		</location>
+		<location name ="Left">
+			<wrap_type type="None" image=":/images/cluster/left_none.jpg" />
+			<wrap_type type="Sleeve" image=":/images/cluster/left_sleeve.jpg" />
+			<wrap_type type="Rounded" image=":/images/cluster/left_rounded.jpg" />
+			<wrap_type type="Cuff" image=":/images/cluster/left_cuff.jpg" />
+		</location>
+		<location name ="Right">
+			<wrap_type type="None" image=":/images/cluster/right_none.jpg" />
+			<wrap_type type="Sleeve" image=":/images/cluster/right_sleeve.jpg" />
+			<wrap_type type="Rounded" image=":/images/cluster/right_rounded.jpg" />
+			<wrap_type type="Cuff" image=":/images/cluster/right_cuff.jpg" />
+		</location>
+		<location name ="Collar">
+			<wrap_type type="None" image=":/images/cluster/collar_none.jpg" />
+		</location>
+		<location name ="Straps">
+			<wrap_type type="None" image=":/images/cluster/straps_none.jpg" />
+		</location>
+		<location name ="Belt">
+			<wrap_type type="None" image=":/images/cluster/belt_none.jpg" />
+			<wrap_type type="UnRestricted" image=":/images/cluster/belt_unrestricted.jpg" />
+		</location>	
+		<location name ="Gusset">
+			<wrap_type type="None" image=":/images/cluster/gusset_none.jpg" />
+			<wrap_type type="Along Leg" image=":/images/cluster/gusset_along_leg.jpg" />
+		</location>		
+		<location name ="Hood">
+			<wrap_type type="None" image=":/images/cluster/hood_none.jpg" />
+			<wrap_type type="On Back" image=":/images/cluster/hood_back.jpg" />
+		</location>
+		<location name ="Front/Back">
+			<wrap_type type="None" image=":/images/cluster/front_back_none.jpg" />
+			<wrap_type type="Over Shoulder" image=":/images/cluster/front_back_shoulder.jpg" />
+		</location>
+		<location name ="Parallel to Floor">
+			<wrap_type type="None" image=":/images/cluster/parallel_none.jpg" />
+		</location>
+		<location name ="Sleeve Shrug">
+			<wrap_type type="None" image=":/images/cluster/sleeve_none.jpg" />
+		</location>
+		<location name ="Scarf">
+			<wrap_type type="None" image=":/images/cluster/scarf_none.jpg" />
+			<wrap_type type="Left" image=":/images/cluster/scarf_left.jpg" />
+			<wrap_type type="Right" image=":/images/cluster/scarf_right.jpg" />
+		</location>	
+		<location name ="Thong">
+			<wrap_type type="None" image=":/images/cluster/thong_none.jpg" />
+		</location>	
+		
+	</style>
+	<style name="Panties">
+		<location name ="None" image="">
+			<wrap_type type="None"/>	
+		</location>
+		<location name ="Front">
+			<wrap_type type="None" image=":/images/cluster/front_none.jpg" />
+			<wrap_type type="Rounded" image=":/images/cluster/front_rounded.jpg" />
+			<wrap_type type="Left" image=":/images/cluster/front_left.jpg" />
+			<wrap_type type="Right" image=":/images/cluster/front_right.jpg" />
+			<wrap_type type="Rounded with Straps" image=":/images/cluster/front_round_with_straps.jpg" />
+			<wrap_type type="Straps" image=":/images/cluster/front_straps.jpg" />
+			<wrap_type type="Collar" image=":/images/cluster/front_collar.jpg" />
+			<wrap_type type="To Back" image=":/images/cluster/front_back.jpg" />
+			<wrap_type type="To Back + Straps" image=":/images/cluster/front_back_strap.jpg" />
+			<wrap_type type="To Back + Gusset" image=":/images/cluster/front_back_gusset.jpg" />
+			<wrap_type type="To Back + Gusset &amp; Straps" image=":/images/cluster/front_gusset_straps.jpg" />
+		</location>
+		<location name ="Back">
+			<wrap_type type="None" image=":/images/cluster/back_none.jpg" />
+			<wrap_type type="Rounded" image=":/images/cluster/back_rounded.jpg" />
+			<wrap_type type="Left" image=":/images/cluster/back_left.jpg" />
+			<wrap_type type="Right" image=":/images/cluster/back_right.jpg" />
+			<wrap_type type="Rounded With Straps" image=":/images/cluster/back_round_straps.jpg" />
+			<wrap_type type="Straps" image=":/images/cluster/back_straps.jpg" />
+			<wrap_type type="To Front" image=":/images/cluster/back_front.jpg" />
+			<wrap_type type="To Front + Straps" image=":/images/cluster/back_front_strap.jpg" />
+			<wrap_type type="To Front + Gusset" image=":/images/cluster/back_front_gusset.jpg" />
+			<wrap_type type="To Front + Gusset &amp; Straps" image=":/images/cluster/back_gusset_straps.jpg" />
+		</location>
+		<location name ="Left">
+			<wrap_type type="None" image=":/images/cluster/left_none.jpg" />
+			<wrap_type type="Sleeve" image=":/images/cluster/left_sleeve.jpg" />
+			<wrap_type type="Rounded" image=":/images/cluster/left_rounded.jpg" />
+			<wrap_type type="Cuff" image=":/images/cluster/left_cuff.jpg" />
+		</location>
+		<location name ="Right">
+			<wrap_type type="None" image=":/images/cluster/right_none.jpg" />
+			<wrap_type type="Sleeve" image=":/images/cluster/right_sleeve.jpg" />
+			<wrap_type type="Rounded" image=":/images/cluster/right_rounded.jpg" />
+			<wrap_type type="Cuff" image=":/images/cluster/right_cuff.jpg" />
+		</location>
+		<location name ="Collar">
+			<wrap_type type="None" image=":/images/cluster/collar_none.jpg" />
+		</location>
+		<location name ="Straps">
+			<wrap_type type="None" image=":/images/cluster/straps_none.jpg" />
+		</location>
+		<location name ="Belt">
+			<wrap_type type="None" image=":/images/cluster/belt_none.jpg" />
+			<wrap_type type="UnRestricted" image=":/images/cluster/belt_unrestricted.jpg" />
+		</location>	
+		<location name ="Gusset">
+			<wrap_type type="None" image=":/images/cluster/gusset_none.jpg" />
+			<wrap_type type="Along Leg" image=":/images/cluster/gusset_along_leg.jpg" />
+		</location>		
+		<location name ="Hood">
+			<wrap_type type="None" image=":/images/cluster/hood_none.jpg" />
+			<wrap_type type="On Back" image=":/images/cluster/hood_back.jpg" />
+		</location>
+		<location name ="Front/Back">
+			<wrap_type type="None" image=":/images/cluster/front_back_none.jpg" />
+			<wrap_type type="Over Shoulder" image=":/images/cluster/front_back_shoulder.jpg" />
+		</location>
+		<location name ="Parallel to Floor">
+			<wrap_type type="None" image=":/images/cluster/parallel_none.jpg" />
+		</location>
+		<location name ="Sleeve Shrug">
+			<wrap_type type="None" image=":/images/cluster/sleeve_none.jpg" />
+		</location>
+		<location name ="Scarf">
+			<wrap_type type="None" image=":/images/cluster/scarf_none.jpg" />
+			<wrap_type type="Left" image=":/images/cluster/scarf_left.jpg" />
+			<wrap_type type="Right" image=":/images/cluster/scarf_right.jpg" />
+		</location>	
+		<location name ="Thong">
+			<wrap_type type="None" image=":/images/cluster/thong_none.jpg" />
+		</location>	
+		
+	</style>
+	<style name="Pants / Skirt">
+		<location name ="None" image="">
+			<wrap_type type="None"/>	
+		</location>
+		<location name ="Front">
+			<wrap_type type="None" image=":/images/cluster/front_none_b.jpg" />
+			<wrap_type type="Rounded" image=":/images/cluster/front_rounded_b.jpg" />
+			<wrap_type type="Left" image=":/images/cluster/front_left_b.jpg" />
+			<wrap_type type="Right" image=":/images/cluster/front_right_b.jpg" />
+			<wrap_type type="Gusset Entry" image=":/images/cluster/front_gusset_entry_b.jpg" />
+			<wrap_type type="Rounded + Gusset" image=":/images/cluster/front_rounded_gusset_b.jpg" />
+			<wrap_type type="Pants Rounded" image=":/images/cluster/front_pants_rounded_b.jpg" />
+			<wrap_type type="To Back" image=":/images/cluster/front_to_back_b.jpg" />
+			<wrap_type type="To Back + Gusset" image=":/images/cluster/front_to_back_gusset_b.jpg" />
+		</location>
+		<location name ="Back">
+			<wrap_type type="None" image=":/images/cluster/back_none_b.jpg" />
+			<wrap_type type="Rounded" image=":/images/cluster/back_rounded_b.jpg" />
+			<wrap_type type="Left" image=":/images/cluster/back_left_b.jpg" />
+			<wrap_type type="Right" image=":/images/cluster/back_right_b.jpg" />
+			<wrap_type type="Gusset Entry" image=":/images/cluster/back_gusset_entry_b.jpg" />
+			<wrap_type type="To Front" image=":/images/cluster/back_to_front_b.jpg" />
+			<wrap_type type="To Front + Gusset" image=":/images/cluster/back_to_front_gusset_b.jpg" />
+		</location>
+		<location name ="Left">
+			<wrap_type type="None" image=":/images/cluster/left_none_b.jpg" />
+			<wrap_type type="Rounded" image=":/images/cluster/left_rounded_b.jpg" />
+			<wrap_type type="Foot Top" image=":/images/cluster/left_foot_top.jpg" />
+			<wrap_type type="Foot Bottom" image=":/images/cluster/left_foot_bottom.jpg" />
+		</location>
+		<location name ="Right">
+			<wrap_type type="None" image=":/images/cluster/right_none_b.jpg" />
+			<wrap_type type="Rounded" image=":/images/cluster/right_rounded_b.jpg" />
+			<wrap_type type="Foot Top" image=":/images/cluster/right_foot_top.jpg" />
+			<wrap_type type="Foot Bottom" image=":/images/cluster/right_foot_bottom.jpg" />
+		</location>	
+		<location name ="Collar">
+			<wrap_type type="None" image=":/images/cluster/collar_none.jpg" />
+		</location>	
+		<location name ="Straps">
+			<wrap_type type="None" image=":/images/cluster/straps_none.jpg" />				
+		</location>
+		<location name ="Belt">
+			<wrap_type type="None" image=":/images/cluster/belt_none.jpg" />
+			<wrap_type type="UnRestricted" image=":/images/cluster/belt_unrestricted.jpg" />
+		</location>
+		<location name ="Gusset">
+			<wrap_type type="None" image=":/images/cluster/gusset_none.jpg" />
+			<wrap_type type="Along Leg" image=":/images/cluster/gusset_along_leg.jpg" />
+		</location>				
+		<location name ="Hood">
+			<wrap_type type="None" image=":/images/cluster/hood_none.jpg" />
+			<wrap_type type="On Back" image=":/images/cluster/hood_on_back.jpg" />
+		</location>				
+		<location name ="Front/Back">
+			<wrap_type type="None" image=":/images/cluster/front_back_none_b.jpg" />
+			<wrap_type type="Gusset Entry" image=":/images/cluster/front_back_gusset_entry_b.jpg" />
+		</location>
+		<location name ="Parallel to Floor">
+			<wrap_type type="None" image=":/images/cluster/parallel_to_floor_none.jpg" />
+		</location>
+		<location name ="Sleeve Shrug">
+			<wrap_type type="None" image=":/images/cluster/sleeve_shrug_none.jpg" />
+		</location>		
+		<location name ="Scarf">
+			<wrap_type type="None" image=":/images/cluster/scarf_none.jpg" />
+			<wrap_type type="Left" image=":/images/cluster/scarf_left.jpg" />
+			<wrap_type type="Right" image=":/images/cluster/scarf_right.jpg" />
+		</location>
+		<location name ="Thong">
+			<wrap_type type="None" image=":/images/cluster/thong_none.jpg" />
+		</location>			
+	</style>
+	<style name="Petticoat / Hosiery">
+		<location name ="None" image="">
+			<wrap_type type="None"/>	
+		</location>
+		<location name ="Front">
+			<wrap_type type="None" image=":/images/cluster/front_none_b.jpg" />
+			<wrap_type type="Rounded" image=":/images/cluster/front_rounded_b.jpg" />
+			<wrap_type type="Left" image=":/images/cluster/front_left_b.jpg" />
+			<wrap_type type="Right" image=":/images/cluster/front_right_b.jpg" />
+			<wrap_type type="Gusset Entry" image=":/images/cluster/front_gusset_entry_b.jpg" />
+			<wrap_type type="Rounded + Gusset" image=":/images/cluster/front_rounded_gusset_b.jpg" />
+			<wrap_type type="Pants Rounded" image=":/images/cluster/front_pants_rounded_b.jpg" />
+			<wrap_type type="To Back" image=":/images/cluster/front_to_back_b.jpg" />
+			<wrap_type type="To Back + Gusset" image=":/images/cluster/front_to_back_gusset_b.jpg" />
+		</location>
+		<location name ="Back">
+			<wrap_type type="None" image=":/images/cluster/back_none_b.jpg" />
+			<wrap_type type="Rounded" image=":/images/cluster/back_rounded_b.jpg" />
+			<wrap_type type="Left" image=":/images/cluster/back_left_b.jpg" />
+			<wrap_type type="Right" image=":/images/cluster/back_right_b.jpg" />
+			<wrap_type type="Gusset Entry" image=":/images/cluster/back_gusset_entry_b.jpg" />
+			<wrap_type type="To Front" image=":/images/cluster/back_to_front_b.jpg" />
+			<wrap_type type="To Front + Gusset" image=":/images/cluster/back_to_front_gusset_b.jpg" />
+		</location>
+		<location name ="Left">
+			<wrap_type type="None" image=":/images/cluster/left_none_b.jpg" />
+			<wrap_type type="Rounded" image=":/images/cluster/left_rounded_b.jpg" />
+			<wrap_type type="Foot Top" image=":/images/cluster/left_foot_top.jpg" />
+			<wrap_type type="Foot Bottom" image=":/images/cluster/left_foot_bottom.jpg" />
+		</location>
+		<location name ="Right">
+			<wrap_type type="None" image=":/images/cluster/right_none_b.jpg" />
+			<wrap_type type="Rounded" image=":/images/cluster/right_rounded_b.jpg" />
+			<wrap_type type="Foot Top" image=":/images/cluster/right_foot_top.jpg" />
+			<wrap_type type="Foot Bottom" image=":/images/cluster/right_foot_bottom.jpg" />
+		</location>	
+		<location name ="Collar">
+			<wrap_type type="None" image=":/images/cluster/collar_none.jpg" />
+		</location>	
+		<location name ="Straps">
+			<wrap_type type="None" image=":/images/cluster/straps_none.jpg" />				
+		</location>
+		<location name ="Belt">
+			<wrap_type type="None" image=":/images/cluster/belt_none.jpg" />
+			<wrap_type type="UnRestricted" image=":/images/cluster/belt_unrestricted.jpg" />
+		</location>
+		<location name ="Gusset">
+			<wrap_type type="None" image=":/images/cluster/gusset_none.jpg" />
+			<wrap_type type="Along Leg" image=":/images/cluster/gusset_along_leg.jpg" />
+		</location>				
+		<location name ="Hood">
+			<wrap_type type="None" image=":/images/cluster/hood_none.jpg" />
+			<wrap_type type="On Back" image=":/images/cluster/hood_on_back.jpg" />
+		</location>				
+		<location name ="Front/Back">
+			<wrap_type type="None" image=":/images/cluster/front_back_none_b.jpg" />
+			<wrap_type type="Gusset Entry" image=":/images/cluster/front_back_gusset_entry_b.jpg" />
+		</location>
+		<location name ="Parallel to Floor">
+			<wrap_type type="None" image=":/images/cluster/parallel_to_floor_none.jpg" />
+		</location>
+		<location name ="Sleeve Shrug">
+			<wrap_type type="None" image=":/images/cluster/sleeve_shrug_none.jpg" />
+		</location>		
+		<location name ="Scarf">
+			<wrap_type type="None" image=":/images/cluster/scarf_none.jpg" />
+			<wrap_type type="Left" image=":/images/cluster/scarf_left.jpg" />
+			<wrap_type type="Right" image=":/images/cluster/scarf_right.jpg" />
+		</location>
+		<location name ="Thong">
+			<wrap_type type="None" image=":/images/cluster/thong_none.jpg" />
+		</location>			
+	</style>
+	<style name="Pullover">
+		<location name ="None" image="">
+			<wrap_type type="None"/>	
+		</location>
+		<location name ="Front">
+			<wrap_type type="None" image=":/images/cluster/front_none_b.jpg" />
+			<wrap_type type="Rounded" image=":/images/cluster/front_rounded_b.jpg" />
+			<wrap_type type="Left" image=":/images/cluster/front_left_b.jpg" />
+			<wrap_type type="Right" image=":/images/cluster/front_right_b.jpg" />
+			<wrap_type type="Gusset Entry" image=":/images/cluster/front_gusset_entry_b.jpg" />
+			<wrap_type type="Rounded + Gusset" image=":/images/cluster/front_rounded_gusset_b.jpg" />
+			<wrap_type type="Pants Rounded" image=":/images/cluster/front_pants_rounded_b.jpg" />
+			<wrap_type type="To Back" image=":/images/cluster/front_to_back_b.jpg" />
+			<wrap_type type="To Back + Gusset" image=":/images/cluster/front_to_back_gusset_b.jpg" />
+		</location>
+		<location name ="Back">
+			<wrap_type type="None" image=":/images/cluster/back_none_b.jpg" />
+			<wrap_type type="Rounded" image=":/images/cluster/back_rounded_b.jpg" />
+			<wrap_type type="Left" image=":/images/cluster/back_left_b.jpg" />
+			<wrap_type type="Right" image=":/images/cluster/back_right_b.jpg" />
+			<wrap_type type="Gusset Entry" image=":/images/cluster/back_gusset_entry_b.jpg" />
+			<wrap_type type="To Front" image=":/images/cluster/back_to_front_b.jpg" />
+			<wrap_type type="To Front + Gusset" image=":/images/cluster/back_to_front_gusset_b.jpg" />
+		</location>
+		<location name ="Left">
+			<wrap_type type="None" image=":/images/cluster/left_none_b.jpg" />
+			<wrap_type type="Rounded" image=":/images/cluster/left_rounded_b.jpg" />
+			<wrap_type type="Foot Top" image=":/images/cluster/left_foot_top.jpg" />
+			<wrap_type type="Foot Bottom" image=":/images/cluster/left_foot_bottom.jpg" />
+		</location>
+		<location name ="Right">
+			<wrap_type type="None" image=":/images/cluster/right_none_b.jpg" />
+			<wrap_type type="Rounded" image=":/images/cluster/right_rounded_b.jpg" />
+			<wrap_type type="Foot Top" image=":/images/cluster/right_foot_top.jpg" />
+			<wrap_type type="Foot Bottom" image=":/images/cluster/right_foot_bottom.jpg" />
+		</location>	
+		<location name ="Collar">
+			<wrap_type type="None" image=":/images/cluster/collar_none.jpg" />
+		</location>	
+		<location name ="Straps">
+			<wrap_type type="None" image=":/images/cluster/straps_none.jpg" />				
+		</location>
+		<location name ="Belt">
+			<wrap_type type="None" image=":/images/cluster/belt_none.jpg" />
+			<wrap_type type="UnRestricted" image=":/images/cluster/belt_unrestricted.jpg" />
+		</location>
+		<location name ="Gusset">
+			<wrap_type type="None" image=":/images/cluster/gusset_none.jpg" />
+			<wrap_type type="Along Leg" image=":/images/cluster/gusset_along_leg.jpg" />
+		</location>				
+		<location name ="Hood">
+			<wrap_type type="None" image=":/images/cluster/hood_none.jpg" />
+			<wrap_type type="On Back" image=":/images/cluster/hood_on_back.jpg" />
+		</location>				
+		<location name ="Front/Back">
+			<wrap_type type="None" image=":/images/cluster/front_back_none_b.jpg" />
+			<wrap_type type="Gusset Entry" image=":/images/cluster/front_back_gusset_entry_b.jpg" />
+		</location>
+		<location name ="Parallel to Floor">
+			<wrap_type type="None" image=":/images/cluster/parallel_to_floor_none.jpg" />
+		</location>
+		<location name ="Sleeve Shrug">
+			<wrap_type type="None" image=":/images/cluster/sleeve_shrug_none.jpg" />
+		</location>		
+		<location name ="Scarf">
+			<wrap_type type="None" image=":/images/cluster/scarf_none.jpg" />
+			<wrap_type type="Left" image=":/images/cluster/scarf_left.jpg" />
+			<wrap_type type="Right" image=":/images/cluster/scarf_right.jpg" />
+		</location>
+		<location name ="Thong">
+			<wrap_type type="None" image=":/images/cluster/thong_none.jpg" />
+		</location>			
+	</style>
+	<style name="Shirt">
+		<location name ="None" image="">
+			<wrap_type type="None"/>
+		</location>
+		<location name ="Front">
+			<wrap_type type="None" image=":/images/cluster/front_none.jpg" quadrant="7" sequence="1" />
+			<wrap_type type="Rounded" image=":/images/cluster/front_rounded.jpg" quadrant="8" sequence="1" />
+			<wrap_type type="Left" image=":/images/cluster/front_left.jpg"  quadrant="8" sequence="1" />
+			<wrap_type type="Right" image=":/images/cluster/front_right.jpg" quadrant="6" sequence="1" />
+			<wrap_type type="Rounded with Straps" image=":/images/cluster/front_round_with_straps.jpg" quadrant="7" sequence="1" />
+			<wrap_type type="Straps" image=":/images/cluster/front_straps.jpg" quadrant="7" sequence="1" />
+			<wrap_type type="Collar" image=":/images/cluster/front_collar.jpg" quadrant="7" sequence="1" />
+			<wrap_type type="To Back" image=":/images/cluster/front_back.jpg" quadrant="7" sequence="1" />
+			<wrap_type type="To Back + Straps" image=":/images/cluster/front_back_strap.jpg" quadrant="7" sequence="1" />
+			<wrap_type type="To Back + Gusset" image=":/images/cluster/front_back_gusset.jpg" quadrant="7" sequence="1" />
+			<wrap_type type="To Back + Gusset &amp; Straps" image=":/images/cluster/front_gusset_straps.jpg" quadrant="7" sequence="1" />
+		</location>
+		<location name ="Back">
+			<wrap_type type="None" image=":/images/cluster/back_none.jpg" quadrant="3" sequence="2" />
+			<wrap_type type="Rounded" image=":/images/cluster/back_rounded.jpg" quadrant="3" sequence="2" />
+			<wrap_type type="Left" image=":/images/cluster/back_left.jpg" quadrant="6" sequence="2" />
+			<wrap_type type="Right" image=":/images/cluster/back_right.jpg" quadrant="8" sequence="2" />
+			<wrap_type type="Rounded With Straps" image=":/images/cluster/back_round_straps.jpg" quadrant="3" sequence="2" />
+			<wrap_type type="Straps" image=":/images/cluster/back_straps.jpg" quadrant="3" sequence="2" />
+			<wrap_type type="To Front" image=":/images/cluster/back_front.jpg" quadrant="3" sequence="2" />
+			<wrap_type type="To Front + Straps" image=":/images/cluster/back_front_strap.jpg" quadrant="3" sequence="2" />
+			<wrap_type type="To Front + Gusset" image=":/images/cluster/back_front_gusset.jpg" quadrant="3" sequence="2" />
+			<wrap_type type="To Front + Gusset &amp; Straps" image=":/images/cluster/back_gusset_straps.jpg" quadrant="3" sequence="2" />
+		</location>
+		<location name ="Left">
+			<wrap_type type="None" image=":/images/cluster/left_none.jpg" quadrant="8" sequence="2" />
+			<wrap_type type="Sleeve" image=":/images/cluster/left_sleeve.jpg" quadrant="1" sequence="1" />
+			<wrap_type type="Rounded" image=":/images/cluster/left_rounded.jpg" quadrant="8" sequence="2" />
+			<wrap_type type="Cuff" image=":/images/cluster/left_cuff.jpg" quadrant="1" sequence="2" />
+		</location>
+		<location name ="Right">
+			<wrap_type type="None" image=":/images/cluster/right_none.jpg" quadrant="6" sequence="2" />
+			<wrap_type type="Sleeve" image=":/images/cluster/right_sleeve.jpg" quadrant="5" sequence="1" />
+			<wrap_type type="Rounded" image=":/images/cluster/right_rounded.jpg" quadrant="6" sequence="2" />
+			<wrap_type type="Cuff" image=":/images/cluster/right_cuff.jpg" quadrant="5" sequence="2" />
+		</location>
+		<location name ="Collar">
+			<wrap_type type="None" image=":/images/cluster/collar_none.jpg" quadrant="3" sequence="1"/>
+		</location>
+		<location name ="Straps">
+			<wrap_type type="None" image=":/images/cluster/straps_none.jpg" quadrant="3" sequence="1" />
+		</location>
+		<location name ="Belt">
+			<wrap_type type="None" image=":/images/cluster/belt_none.jpg" quadrant="7" sequence="2" />
+			<wrap_type type="UnRestricted" image=":/images/cluster/belt_unrestricted.jpg" quadrant="7" sequence="2" />
+		</location>
+		<location name ="Gusset">
+			<wrap_type type="None" image=":/images/cluster/gusset_none.jpg" quadrant="7" sequence="3" />
+			<wrap_type type="Along Leg" image=":/images/cluster/gusset_along_leg.jpg" quadrant="7" sequence="3" />
+		</location>				
+		<location name ="Hood">
+			<wrap_type type="None" image=":/images/cluster/hood_none.jpg" quadrant="3" sequence="2" />
+			<wrap_type type="On Back" image=":/images/cluster/hood_back.jpg" quadrant="3" sequence="2" />
+		</location>
+		<location name ="Front/Back">
+			<wrap_type type="None" image=":/images/cluster/front_back_none.jpg" quadrant="7" sequence="1" />
+			<wrap_type type="Over Shoulder" image=":/images/cluster/front_back_shoulder.jpg" quadrant="7" sequence="1" />
+		</location>
+		<location name ="Parallel to Floor">
+			<wrap_type type="None" image=":/images/cluster/parallel_none.jpg" quadrant="7" sequence="2" />
+		</location>
+		<location name ="Sleeve Shrug">
+			<wrap_type type="None" image=":/images/cluster/sleeve_none.jpg" quadrant="7" sequence="0" />
+		</location>
+		<location name ="Scarf">
+			<wrap_type type="None" image=":/images/cluster/scarf_none.jpg" quadrant="8" sequence="3" />
+			<wrap_type type="Left" image=":/images/cluster/scarf_left.jpg" quadrant="8" sequence="3" />
+			<wrap_type type="Right" image=":/images/cluster/scarf_right.jpg" quadrant="5" sequence="3" />
+		</location>
+		<location name ="Thong">
+			<wrap_type type="None" image=":/images/cluster/thong_none.jpg" quadrant="7" sequence="2" />
+		</location>
+	</style>
+</clusterconfig>
