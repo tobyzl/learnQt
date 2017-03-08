@@ -1,0 +1,1 @@
+Qt提供了四个类来处理图像数据：QImage、QPixmap、QBitmap和QPicture，它们也都是常用的绘图设备。其中QImage主要用来进行I/O处理，它对I/O处理操作进行了优化，而且也可以用来直接访问和操作像素；QPixmap主要用来在屏幕上显示图像，它对在屏幕上显示图像进行了优化；QBitmap是QPixmap的子类，它是一个便捷类，用来处理颜色深度为1的图像，即只能显示黑白两种颜色；QPicture用来记录并重演QPainter命令
